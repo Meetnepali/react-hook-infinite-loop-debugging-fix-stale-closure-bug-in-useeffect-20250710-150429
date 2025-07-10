@@ -1,0 +1,17 @@
+{
+  "name": "react-profile-stale-effect",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "react": "18.2.0",
+    "react-dom": "18.2.0"
+  },
+  "scripts": {
+    "start": "npx serve -s build -l 3000",
+    "build": "npx esbuild src/index.jsx --bundle --outfile=build/bundle.js --define:process.env.NODE_ENV=\"production\" --minify --target=es2020 && cp public/index.html build/index.html"
+  },
+  "devDependencies": {
+    "esbuild": "0.19.11",
+    "serve": "14.2.0"
+  }
+}
